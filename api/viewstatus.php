@@ -243,30 +243,6 @@ $cid = $_SESSION['c_id'];
     <!-- Feature History Area End Here -->
     
    
-
-    <!-- Firm Visit Start -->
-   
-
-    <!-- Firm Visit End -->
-
-
-    <!-- Feature Start -->
-   
-    <!-- Feature End -->
-
-
-
-
-    <!-- Testimonial Start -->
-    
-    <!-- Testimonial End -->
-
-
-    <!-- Footer Start -->
-	
-   
-
-    <!-- Footer End -->
      
     
                 

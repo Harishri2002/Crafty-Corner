@@ -202,13 +202,6 @@ $admin=new Admin();
     <!-- Product End -->
 
 
-
-
-    <!-- Testimonial Start -->
-    
-    <!-- Testimonial End -->
-
-
     <!-- Footer Start -->
     <?php include "mainfooter.php" ?>
     <!-- Footer End -->

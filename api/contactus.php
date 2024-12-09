@@ -122,18 +122,6 @@
                     </div>
                 </div>
             </div>
-    
-
-
-    
-
-
-
-
-    <!-- Testimonial Start -->
-    
-    <!-- Testimonial End -->
-
 
     <!-- Footer Start -->
     <?php include "mainfooter.php" ?>

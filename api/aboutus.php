@@ -365,10 +365,6 @@ Join us on this creative adventure and become part of a passionate community tha
     </div>
 
 
-    <!-- Testimonial Start -->
-    
-    <!-- Testimonial End -->
-
 
     <!-- Footer Start -->
     <?php include "mainfooter.php" ?>

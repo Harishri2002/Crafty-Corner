@@ -339,10 +339,7 @@ $crid=$_GET['cr_id'];
                         </div>
                       </div>
                       <div class="d-flex justify-content-between px-3 pt-4 pb-4">
-                        <!-- <div><button type="reset" class="btn btn-light cancel">clear</button></div> -->
-
-                        <!-- <div><button type="button" class="btn btn-primary payment">Make Payment</button></div> -->
-                        <!-- <div><input type="submit" class="btn btn-primary payment" value="Make Payment"></div> -->
+                        
                       </div>
                       <!-- </form> -->
                     </div>

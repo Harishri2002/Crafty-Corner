@@ -242,9 +242,6 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
 
 
 
-    <!-- Testimonial Start -->
-    
-    <!-- Testimonial End -->
 
 
     <!-- Footer Start -->

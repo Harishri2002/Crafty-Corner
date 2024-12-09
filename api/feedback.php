@@ -58,41 +58,41 @@ $admin=new Admin();
     <!-- Page Header Start -->
     
     <!-- Page Header End -->
-    <center>
-	<div class="comments-area comments-reply-area">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-custom" width="200px;">
-                                            <form action="controller/feedback.php" class="comment-form-area" method="post">
-												<br><br><br><br><br>
-                                                <center>
-                                                <h1>Thank You For Ordering</h1>
-                                                <p align="center">Thank you for placing your order with us. We truly appreciate your business and the trust you have placed in our company. Your satisfaction is our top priority, and we are committed to ensuring that your order is handled with the utmost care and attention to detail.
+        <center>
+            <div class="comments-area comments-reply-area">
+            <div class="row">
+                <div class="col-lg-12 col-custom" width="200px;">
+                    <form action="controller/feedback.php" class="comment-form-area" method="post">
+                        <br><br><br><br><br>
+                        <center>
+                        <h1>Thank You For Ordering</h1>
+                        <p align="center">Thank you for placing your order with us. We truly appreciate your business and the trust you have placed in our company. Your satisfaction is our top priority, and we are committed to ensuring that your order is handled with the utmost care and attention to detail.
 
-</p><p align="center">We want to assure you that we are working diligently to process your order as quickly as possible. Our dedicated team is carefully preparing your items for shipment, ensuring that they are packaged securely to reach you in perfect condition.</p>
-</center>
-                                                <div class="row comment-input">
-                                                    <br><br>
-													<h2>Feedback</h2>
-                                                    
-                                                   
-                                                </div>
-                                                <div class="comment-form-comment mb-3">
-                                                    
-                                                    <textarea class="comment-notes" required="required" name="feed"></textarea>
-                                                </div>
-                                                <div class="comment-form-submit">
-                                                <?php   $orid=$_GET['orid'];
-                                                                                                $pcid=$_GET['pcid'];
-											                                                    ?>
-                                                <input type="hidden" value="<?php echo $pcid?>" name="pcid">
-                                                <input type="hidden" value="<?php echo $orid?>" name="orid">
-                                                    <button class="btn flosun-button secondary-btn rounded-0" type="submit"name="sub">Submit</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-</center>
+                        </p><p align="center">We want to assure you that we are working diligently to process your order as quickly as possible. Our dedicated team is carefully preparing your items for shipment, ensuring that they are packaged securely to reach you in perfect condition.</p>
+                            </center>
+                        <div class="row comment-input">
+                            <br><br>
+                            <h2>Feedback</h2>
+                            
+                            
+                        </div>
+                        <div class="comment-form-comment mb-3">
+                            
+                            <textarea class="comment-notes" required="required" name="feed"></textarea>
+                        </div>
+                        <div class="comment-form-submit">
+                        <?php   $orid=$_GET['orid'];
+                                                                        $pcid=$_GET['pcid'];
+                                                                        ?>
+                        <input type="hidden" value="<?php echo $pcid?>" name="pcid">
+                        <input type="hidden" value="<?php echo $orid?>" name="orid">
+                            <button class="btn flosun-button secondary-btn rounded-0" type="submit"name="sub">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </center>
     <br><br><br><br><br><br>
 
     <!-- Testimonial Start -->

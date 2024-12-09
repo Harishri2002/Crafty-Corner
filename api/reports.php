@@ -225,74 +225,68 @@ $admin=new Admin();
 
 $s_date=$_POST['s_date'];
 $f_date=$_POST['f_date'];
-
-
-
-
-
-
 ?>
 
-                                <div class="panel-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                
-                                               <th>User</th>
-                                                <th>Email</th>
-                                                <th>Address</th>
-                                                <th>Contact</th>
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                
+                                <th>User</th>
+                                <th>Email</th>
+                                <th>Address</th>
+                                <th>Contact</th>
 
-                                                <th>Product</th>
-                                                <th>Image</th>
-                                                <th>Description</th>
-                                                <th>Price</th>
+                                <th>Product</th>
+                                <th>Image</th>
+                                <th>Description</th>
+                                <th>Price</th>
 
-                                                <th>Quantity</th>
-                                                <th>Total Amount Paid</th>
-                                                <th>Date</th>
-  
-
+                                <th>Quantity</th>
+                                <th>Total Amount Paid</th>
+                                <th>Date</th>
 
 
-                                                
 
 
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php 
-                                            $stmt=$admin->ret("SELECT * FROM `order_details` INNER JOIN `product` ON product.prod_id=order_details.p_id INNER JOIN `orders` ON order_details.o_id=orders.o_id INNER JOIN `customer` ON orders.c_id=customer.c_id WHERE `date` BETWEEN '$s_date' AND '$f_date' ");
-                                            while($row=$stmt->fetch(PDO::FETCH_ASSOC)){?>
-                                            <tr>
-                                                
-                                                <td><?php echo $row['c_name']?></td>
-                                                <td><?php echo $row['email']?></td>
-                                                <td><?php echo $row['address']?></td>
-                                                <td><?php echo $row['contact']?></td>
-
-                                                <td><?php echo $row['prod_name']?></td>
-                                                <td><img src="../blushme/admin/<?php echo $row['prod_image']?>" width="75px" height="75px"></td>
-                                                <td><?php echo $row['prod_description']?></td>
-                                                <td><?php echo $row['price']?></td>
-
-                                                <td><?php echo $row['quantity']?></td>
-                                                    <td>₹<?php echo $row['price']*$row['quantity']?></td>
-                                                
-                                                
-                                                <td><?php echo $row['date']?></td>
+                                
 
 
-                                                
-                                            </tr>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php 
+                            $stmt=$admin->ret("SELECT * FROM `order_details` INNER JOIN `product` ON product.prod_id=order_details.p_id INNER JOIN `orders` ON order_details.o_id=orders.o_id INNER JOIN `customer` ON orders.c_id=customer.c_id WHERE `date` BETWEEN '$s_date' AND '$f_date' ");
+                            while($row=$stmt->fetch(PDO::FETCH_ASSOC)){?>
+                            <tr>
+                                
+                                <td><?php echo $row['c_name']?></td>
+                                <td><?php echo $row['email']?></td>
+                                <td><?php echo $row['address']?></td>
+                                <td><?php echo $row['contact']?></td>
 
-                                        <?php }?>
-                                             
-                                        </tbody>
-                                    </table>
-                                </div>
-                            <?php } ?>
-                            </div>
+                                <td><?php echo $row['prod_name']?></td>
+                                <td><img src="../blushme/admin/<?php echo $row['prod_image']?>" width="75px" height="75px"></td>
+                                <td><?php echo $row['prod_description']?></td>
+                                <td><?php echo $row['price']?></td>
+
+                                <td><?php echo $row['quantity']?></td>
+                                    <td>₹<?php echo $row['price']*$row['quantity']?></td>
+                                
+                                
+                                <td><?php echo $row['date']?></td>
+
+
+                                
+                            </tr>
+
+                        <?php }?>
+                                
+                        </tbody>
+                    </table>
+                </div>
+            <?php } ?>
+            </div>
 
         <!-- END DATA TABLE-->
     </div>
